@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Rando Hub has moved</title>
+<script>
+  // Rando Hub's old addresses (hugecrankhank.github.io/Rando-hub/… and /Rando-hub-Beta/…) → the
+  // licensed sites, the same page (and seed link) there. Without a license that page is the
+  // lock page: paste a key, or ask Hank for one.
+  (function () {
+    var p = location.pathname, m = p.match(/^\/rando-hub(-beta)?(\/.*)?$/i);
+    var site = m && m[1] ? 'https://rando-hub-beta.pages.dev' : 'https://rando-hub.pages.dev';
+    var rest = m ? (m[2] || '/') : '/';
+    location.replace(site + rest + location.search + location.hash);
+  })();
+</script>
+<style>body{margin:0;background:#0e1116;color:#e6e9ee;font:16px/1.5 system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;text-align:center;padding:16px}a{color:#e0b040}</style>
+</head>
+<body>
+<main>
+  <h1>Rando Hub has moved</h1>
+  <p>It's now a licensed release by Hank @huge_crank_hank.<br>
+  <a href="https://rando-hub.pages.dev/license/">Open Rando Hub</a> · <a href="https://rando-hub-beta.pages.dev/license/">Rando Hub Beta</a></p>
+  <p>No key yet? Ask for one on that page.</p>
+</main>
+</body>
+</html>
